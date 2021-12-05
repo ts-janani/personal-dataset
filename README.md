@@ -2,10 +2,10 @@
 ## Motivation:
 I wanted to answer various questions regarding school shootings across the United States, including what type of school is most susceptible, which state they occur in the most, and how many there have been overall. 
 
-## **Data Process:** 
+## **Data Process** 
 I found the source data at https://www.kaggle.com/ecodan/school-shootings-us-1990present. The original dataset included the date, city, state, area type (urban, suburban, rural), the type of school, the number of fatalities, number of wounded, where the details of each incident was sourced (Wikipedia or the Pah/Amaral/Hagan research), and a short description of the incident. Firstly I cleaned the data, getting rid of the descriptions, area type as well as the wounded. These columns were only about half filled, so I felt they would not produce any solid overall data. I then deleted all the duplicate incidents, by idenitifying duplicate dates in Excel. Some of the data points had the school type missing, so I filled them in with "Unknown". The rest of data was well recorded with no typos, so this left me with my final dataset. 
 
-## **Visualization:**
+## **Visualizations**
 I created a few visualizations to represent different aspects of the data. 
 
 The first graph depicts the total number of fatalities from school shooting each year. 2012 and 2018 are tied for the most, with 1993 and 2007 closely behind. The second plot shows the cumulative sum of fatalities over the years.
@@ -25,7 +25,7 @@ The last plot shows the frequency of fatalities from each incident. Most inciden
 
 ![image](https://user-images.githubusercontent.com/91508008/144729125-3dc6006c-a28b-4c59-b23f-f5d1e911de5d.png)
 
-## **Analysis:** 
+## **Analysis** 
 I found Tukey's five number summary of the fatality frequency using the summary function in R. Using IQR, I found that anything over 1 fatality in an incident is an outlier. Here is the boxplot representation of the five number summary.
 
 ![image](https://user-images.githubusercontent.com/91508008/144729900-1a9f4e0c-8600-4b5b-b45e-a9495312ce07.png)
