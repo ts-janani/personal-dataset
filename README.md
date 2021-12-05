@@ -24,18 +24,12 @@ The fourth plot depicts the frequency of school shootings sorted by type of scho
 
 ![image](https://user-images.githubusercontent.com/91508008/144729091-ac62fdbf-e9f1-4db0-92f4-9ed0f2e95a46.png)
 
-The last plot shows the frequency of fatalities from each incident. Most incidents end with just one or two fatalities, and the incident with the most fatalities had over 30. 
+The last plot shows the frequency of fatalities from each incident. Most incidents end with just zero or one fatality, and the incident with the most fatalities had over 30. 
 
 ![image](https://user-images.githubusercontent.com/91508008/144729125-3dc6006c-a28b-4c59-b23f-f5d1e911de5d.png)
 
-•Analysis: Finally, the ReadMe should describe the results of at least one method from this course
-that you applied to the dataset and what you learned from it. This can be anything from a simple EDA
-technique like identifying outliers, making a box plot of a column, evaluating the summary statistics
-(Tukey’s 5 numbers), to one of the regression models from supervised learning, or one of the clustering
-methods from unsupervised learning. This is not an exhaustive list of possibilities and as with the
-previous components doesn’t need to be long or drawn out.
-
-I found Tukey's five number summary of the fatality frequency using the summary function in R. Using IQR, I found that anything over 1 
+Analysis: 
+I found Tukey's five number summary of the fatality frequency using the summary function in R. Using IQR, I found that anything over 1 fatality in an incident is an outlier. Here is the boxplot representation of the five number summary.
 
 ![image](https://user-images.githubusercontent.com/91508008/144729900-1a9f4e0c-8600-4b5b-b45e-a9495312ce07.png)
 
